@@ -19,6 +19,7 @@ def checkIfPossible(triangleSides):
         triangleSides[1] + triangleSides[2]>triangleSides[0]:
             return True
         else: return False
+    else: return False
     
 getSides(t)
 print("Triangle sides: " + str(t))
