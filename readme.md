@@ -23,3 +23,9 @@ WhatsApp Exercises:
 5. arrDuplicates
 Given an array of integers, write a function that returns all the elements that appear more than once in the array. The array could have duplicate elements, and you are expected to return each duplicate only once in the result. Array max size is 100 (it contains from 2 to 100 elements)
 Example:    Input: [4, 3, 2, 7, 8, 2, 3, 1]     Output: [2, 3]
+6. (383) Ransom Note from leetcode
+Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
+Each letter in magazine can only be used once in ransomNote.
+* Example 1:Input: ransomNote = "a", magazine = "b"    || Output: false
+* Example 2: Input: ransomNote = "aa", magazine = "ab" || Output: false
+* Example 3:Input: ransomNote = "aa", magazine = "aab" || Output: true
