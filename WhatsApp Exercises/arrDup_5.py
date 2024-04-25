@@ -9,17 +9,19 @@ class customError(Exception):
 
 def testArrDup():
     testArr = []
-    for i in range(101):
+    for i in range(50000):
         testArr.append(r.randint(0,9))
     print(testArr)
     print(getArrDup(testArr))
 
 def getArrDup(arr):
-    if not isinstance(arr, list) or len(arr)<2 or len(arr)>100 or not all(isinstance(item,int) for item in arr):
+    if not isinstance(arr, list) or len(arr)<2  or not all(isinstance(item,int) for item in arr):
         raise customError("Wrong arr")
     
     
     for i in range(len(arr)):
+        if i == 1000:
+            print("aaaaaaaa")
         for j in range(i+1,len(arr)):
             flag = False
             if arr[i] == arr[j]:
