@@ -1,4 +1,6 @@
 import random as r
+import unittest
+
 
 dupl = []
 class customError(Exception):
@@ -21,7 +23,7 @@ def getArrDup(arr):
     
     freq = {}
     dupl = []
-
+    count = 0
     for i in arr:
         if i not in freq:
             freq[i] = 1
@@ -32,12 +34,27 @@ def getArrDup(arr):
     for i, count in freq.items():
         if count > 1:
             dupl.append(i)
-    
-    print(freq)
     return dupl
+    
+
+    
+    
+    # count = 0
+    # for n in arr:
+    #     if n == all(dupl):
+    #         count += 1
+    # return count > 1
+
+    # return dupl
 
 try:
-    testArrDup()
+    
+    test_cases = [[1,3,5,6,8,4,3,6,6],{6,3}]
+    
+    if getArrDup(test_cases[0]) == list(test_cases[1]):
+        print("Ok")
+
+    #testArrDup()
     #arr = [1,2]
     #print(getArrDup(arr))
 except customError as e:
