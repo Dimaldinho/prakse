@@ -1,5 +1,7 @@
 import random as r
 import unittest
+import time
+start_time = time.time()
 
 class TestCalculator(unittest.TestCase):
     def test_case(self):
@@ -58,8 +60,8 @@ def getArrDup(arr):
     # return dupl
 
 try:
-    
-        unittest.main()
+    start_time = time.time()
+    #unittest.main()
 
     #testArrDup()
     #arr = [1,2]
