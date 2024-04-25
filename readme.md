@@ -20,3 +20,6 @@ WhatsApp Exercises:
     Description: The user starts with a certain account balance and can deposit, withdraw, or check the balance.
     * Ensure that the user cannot withdraw more than the current balance (print a warning message if this happens)
     * ATM only dispenses certain bill denominations ($5,10,20,50,100,500) (you can't withdraw $0.53, for example)
+5. arrDuplicates
+Given an array of integers, write a function that returns all the elements that appear more than once in the array. The array could have duplicate elements, and you are expected to return each duplicate only once in the result. Array max size is 100 (it contains from 2 to 100 elements)
+Example:    Input: [4, 3, 2, 7, 8, 2, 3, 1]     Output: [2, 3]
