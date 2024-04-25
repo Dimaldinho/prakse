@@ -1,4 +1,7 @@
 import random as r
+import time
+
+
 
 dupl = []
 class customError(Exception):
@@ -36,7 +39,11 @@ def getArrDup(arr):
     return dupl
 
 try:
+    start_time = time.time()
     testArrDup()
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print("Execution time:",execution_time)
     #arr = [1,2]
     #print(getArrDup(arr))
 except customError as e:

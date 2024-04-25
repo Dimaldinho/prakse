@@ -1,6 +1,6 @@
 import random as r
 import unittest
-
+import time
 
 dupl = []
 class customError(Exception):
@@ -11,7 +11,7 @@ class customError(Exception):
 
 def testArrDup():
     testArr = []
-    for i in range(10):
+    for i in range(5000):
         testArr.append(r.randint(0,50))
     print(testArr)
     print(getArrDup(testArr))
@@ -49,11 +49,15 @@ def getArrDup(arr):
 
 try:
     
-    test_cases = [[1,3,5,6,8,4,3,6,6],{6,3}]
+    #test_cases = [[1,3,5,6,8,4,3,6,6],{6,3}]
     
-    if getArrDup(test_cases[0]) == list(test_cases[1]):
-        print("Ok")
-
+    #if getArrDup(test_cases[0]) == list(test_cases[1]):
+    #    print("Ok")
+    start_time = time.time()
+    testArrDup()
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print("Execution time:",execution_time)
     #testArrDup()
     #arr = [1,2]
     #print(getArrDup(arr))
