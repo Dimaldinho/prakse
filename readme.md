@@ -1,8 +1,31 @@
 Read:
-1. Automate the boring stuff with Python: https://automatetheboringstuff.com/#toc 
-2. https://learnpythontherightway.com/#read
+1. Automate the boring stuff with Python:   https://automatetheboringstuff.com/#toc 
+2. Learn python                             https://learnpythontherightway.com/#read
+3. Python koda labais stils.                https://pep8.org/ 
+4. Commit messages.                         https://www.conventionalcommits.org/en/v1.0.0/
 
-Programming Exercises:
+Folder - Automate the boring stuff with Python:     Finished exercises from the book
+
+
+Folder - leetcode:     Finished exercises from the Leetcode
+
+7. (14) Longest Common Prefix from leetcode 
+Write a function to find the longest common prefix string amongst an array of strings.
+If there is no common prefix, return an empty string "".
+* Example 1: Input: strs = ["flower","flow","flight"]  || Output: "fl"
+* Example 2: Input: strs = ["dog","racecar","car"]     ||Output: ""
+Explanation: There is no common prefix among the input strings.
+
+6. (383) Ransom Note from leetcode
+Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
+Each letter in magazine can only be used once in ransomNote.
+* Example 1:Input: ransomNote = "a", magazine = "b"    || Output: false
+* Example 2: Input: ransomNote = "aa", magazine = "ab" || Output: false
+* Example 3:Input: ransomNote = "aa", magazine = "aab" || Output: true
+
+
+
+Folder - Programming Exercises:
 
 1. Turtle_1.py:
     Based on https://learnpythontherightway.com/chapter/chapter-3.html
@@ -23,16 +46,3 @@ Programming Exercises:
 5. arrDuplicates
 Given an array of integers, write a function that returns all the elements that appear more than once in the array. The array could have duplicate elements, and you are expected to return each duplicate only once in the result. Array max size is 100 (it contains from 2 to 100 elements)
 Example:    Input: [4, 3, 2, 7, 8, 2, 3, 1]     Output: [2, 3]
-6. (383) Ransom Note from leetcode
-Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
-Each letter in magazine can only be used once in ransomNote.
-* Example 1:Input: ransomNote = "a", magazine = "b"    || Output: false
-* Example 2: Input: ransomNote = "aa", magazine = "ab" || Output: false
-* Example 3:Input: ransomNote = "aa", magazine = "aab" || Output: true
-
-7. (14) Longest Common Prefix from leetcode 
-Write a function to find the longest common prefix string amongst an array of strings.
-If there is no common prefix, return an empty string "".
-* Example 1: Input: strs = ["flower","flow","flight"]  || Output: "fl"
-* Example 2: Input: strs = ["dog","racecar","car"]     ||Output: ""
-Explanation: There is no common prefix among the input strings.
