@@ -1,33 +1,37 @@
 import requests
 import json
+
+link = 'https://simple-codi-dimaldinho.koyeb.app/'
+
+
 def getAnimalById(id):
-    r = requests.get(f'http://127.0.0.1:8000/get-animal?animal_id={id}')
-    if r.status_code == 200:
-        data = r.json()
-        return data
+    retrive_data_from_api = requests.get(f'{link}get-animal?animal_id={id}')
+    
+    if retrive_data_from_api.status_code == 200:
+        return retrive_data_from_api.json()
     else:
-        print('Failed to fetch data:', r.status_code)\
-        
+        print('Failed to fetch data:', retrive_data_from_api.status_code)
+
+
 def getAllAnimals():
-    r = requests.get('http://127.0.0.1:8000/get-all-animals')
-    return r.json()
-    
-def deleteAnimal(id):
-    r = requests.delete(f'http://127.0.0.1:8000/delete-animal/{id}')
+    retrive_data_from_api = requests.get(f'{link}get-all-animals')
+    return retrive_data_from_api.json()
 
-def createAnimal(id,name,age):
-    url = 'http://127.0.0.1:8000/create-animal/{id}?animal_id=%s'%(id)
-    print(url) 
+
+def createAnimal(name,age):
+    url = '%screate-animal/{}?animal_name=%s&animal_age=%s'%(link,name,age)
+    #print(url)
     new_data = {'name': name,'age': age}
-    
 
-    headers = {'accept': 'application/json', 'Content-Type': 'application/json'}
-    r = requests.post(url,headers=headers,json = new_data)
+    requests.post(url,json = new_data)
+    
 
 def updateAnimal(id,name,age):
-    url = f'http://127.0.0.1:8000/update-animal/{id}' 
+    url = f'{link}update-animal/{id}?animal_name={name}&animal_age={age}'
     new_data = {'name': name,'age': age}
-    print(new_data)
+    
+    requests.put(url,json = new_data)
 
-    headers = {'accept': 'application/json', 'Content-Type': 'application/json'}
-    r = requests.put(url,headers=headers,json = new_data)
+
+def deleteAnimal(id):
+    requests.delete(f'{link}delete-animal/{id}')
