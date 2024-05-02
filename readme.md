@@ -2,7 +2,7 @@ Read:
 1. Automate the boring stuff with Python: https://automatetheboringstuff.com/#toc 
 2. https://learnpythontherightway.com/#read
 
-WhatsApp Exercises:
+Programming Exercises:
 
 1. Turtle_1.py:
     Based on https://learnpythontherightway.com/chapter/chapter-3.html
